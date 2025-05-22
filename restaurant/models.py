@@ -15,4 +15,4 @@ class Menu(models.Model):
     inventory = models.IntegerField()
 
     def __str__(self):
-        return f"{self.title} costs {self.price} and there are {self.inventory} in stock"
+        return f"{self.title} costs {self.price:.2f} and there are {self.inventory} in stock"
